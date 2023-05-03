@@ -45,11 +45,6 @@ func getIntersectionNode(headA, headB *ListNode) *ListNode {
 	return headA
 }
 
-// 方式二：利用双指针同时遍历两次链表
-// fast : A -> B
-// slow : B -> A
-// 如果存在交点，必定会相交，如果不存在交点，则都等于nil
-
 func main() {
 	headA := &ListNode{
 		Val: 2,
